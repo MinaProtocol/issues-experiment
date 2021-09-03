@@ -1,4 +1,5 @@
 ### Welcome 👋
+
 Thank you for contributing to Mina! Please see `CONTRIBUTING.md` if you haven't
 yet. In that doc, there are more details around how to start our CI.
 
@@ -6,6 +7,7 @@ If you cannot complete any of the steps below, please ask for help from a core
 contributor.
 
 ### Incomplete Work
+
 We feel it's important that everyone is comfortable landing incomplete projects
 so we don't keep PRs open for too long (especially on develop). To do this we
 don't want to forget that something is incomplete, don't want to be blocked on
