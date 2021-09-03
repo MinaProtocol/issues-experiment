@@ -1,6 +1,6 @@
-name: Documentation
-description: Did you find an error in our documentation? Report your findings here.
-labels: "type: documentation"
+name: 🪲 Flaky test
+description: Did you find a flaky test in our CI? Report your findings here.
+labels: "type: flaky_test"
 body:
   - type: markdown
     attributes:
@@ -8,7 +8,7 @@ body:
         # Welcome 👋
 
         Thanks for taking the time to fill out this issue.
-        Please fill out each section below. This info allows Mina maintainers to triage and fix your issue as quickly as possible.
+        Please fill out each section below. This info allows Mina maintainers to triage and fix the flaky test(s) as quickly as possible.
 
         Useful links:
 
@@ -29,15 +29,31 @@ body:
     attributes:
       label: Summary
       description: |
-        What problem(s) did you run into that caused you to request a fix to the documentation or additional documentation? What questions do you think we should answer?
+        Describe what test(s) are flaky and how do you think they should behave?
   - type: textarea
     validations:
       required: true
     attributes:
-      label: Steps to Resolve this Issue
-      description: How can the problem be solved? Are there any additional steps required? Do any other pages need to be updated?
+      label: Steps to replicate this Issue
+      description: How can the problem be replicated? Are there any additional steps required?
       value: |
         1.
         2.
         3.
         ...
+  - type: textarea
+    attributes:
+      label: Console output
+      render: shell
+      description: Paste the output of the test(s) here.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Platform
+      description: What platform you use. Are there any special flags you are using?
+      placeholder: |
+        Platform: Ubuntu 21.04
+        FLAGS: --XPTO=1
+    validations:
+      required: true

@@ -1,4 +1,4 @@
-name: Bug Report
+name: "🐛 Bug report"
 description: Something isn't working as expected? Report your bugs here.
 labels: "type: bug"
 body:
@@ -10,7 +10,7 @@ body:
         Thanks for taking the time to fill out this bug report.
         Please fill out each section below. This info allows Mina maintainers to diagnose (and fix!) your issue as quickly as possible. Otherwise we might need to close the issue without e.g. clear reproduction steps.
 
-        Bug reports also shoulnd't be used for support requests about a specific problem in your site, please use GitHub Discussions for that.
+        Bug reports also should not be used for support requests about a specific problem in your site, please use GitHub Discussions for that.
 
         Useful Links:
         - Documentation: https://docs.minaprotocol.com/
@@ -91,3 +91,7 @@ body:
         https://drive.google.com/file/d/1GodnZqi-_cYox2UXii2jXWPNxgn5AprI/
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Tell us anything else you think we should know.
