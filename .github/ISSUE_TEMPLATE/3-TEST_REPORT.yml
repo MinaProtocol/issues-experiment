@@ -57,3 +57,9 @@ body:
         FLAGS: --XPTO=1
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Build link(s)
+      description: Provide the CI's URL where the build is failing
+    validations:
+      required: false
