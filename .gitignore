@@ -1,0 +1,7 @@
+_build*
+.merlin*
+*.ignore
+*.log
+*.aux
+node_modules/
+.DS_Store
