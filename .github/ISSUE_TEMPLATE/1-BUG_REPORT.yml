@@ -57,6 +57,8 @@ body:
       required: true
   - type: dropdown
     id: frequency
+    validations:
+      required: true
     attributes:
       label: Describe how frequently you see this issue.
       multiple: false
@@ -67,6 +69,8 @@ body:
         - Always
   - type: dropdown
     id: impact
+    validations:
+      required: true
     attributes:
       label: What is the impact of this issue on your ability to run a node?
       multiple: false
@@ -108,7 +112,7 @@ body:
       value: |
         ## Sharing logs 📋
 
-        We are working on a new service for our community to safely upload their logs, in the meanwhile please send your logs to our e-mail:
+        We are currently developing a new service to safely enable our community upload their logs using this form, in the meanwhile please send your logs to our e-mail:
         - Run "mina client export-logs";
         - Upload the resulting tar.gz file to a hosting service (Google Drive, Dropbox, etc.);
         - Share the link where we can download your logs with logs@o1labs.org;
