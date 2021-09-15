@@ -106,6 +106,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        ## Sharing logs 📋
+
         We are working on a new service for our community to safely upload their logs, in the meanwhile please send your logs to our e-mail:
         - Run "mina client export-logs";
         - Upload the resulting tar.gz file to a hosting service (Google Drive, Dropbox, etc.);
