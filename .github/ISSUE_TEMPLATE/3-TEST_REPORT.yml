@@ -1,6 +1,6 @@
-name: 🪲 Flaky test
-description: Did you find a flaky test in our CI? Report your findings here.
-labels: "type: flaky_test"
+name: 🪲 Failing test
+description: Did you find a failing test in our CI? Report your findings here.
+labels: "type: failing_test"
 body:
   - type: markdown
     attributes:
@@ -8,7 +8,7 @@ body:
         # Welcome 👋
 
         Thanks for taking the time to fill out this issue.
-        Please fill out each section below. This info allows Mina maintainers to triage and fix the flaky test(s) as quickly as possible.
+        Please fill out each section below. This info allows Mina maintainers to triage and fix the failing test(s) as quickly as possible.
 
         Useful links:
 
@@ -29,7 +29,7 @@ body:
     attributes:
       label: Summary
       description: |
-        Describe what test(s) are flaky and how do you think they should behave?
+        Describe what test(s) are failing and how do you think they should behave?
   - type: textarea
     validations:
       required: true

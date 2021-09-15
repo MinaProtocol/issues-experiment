@@ -55,6 +55,26 @@ body:
       description: Describe what actually happened.
     validations:
       required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Describe how frequently you see this issue.
+      multiple: false
+      options:
+        - Rarely
+        - Sometimes
+        - Frequently
+        - Always
+  - type: dropdown
+    id: impact
+    attributes:
+      label: What is the impact of this issue on your ability to run a node?
+      multiple: false
+      options:
+        - Low
+        - Medium
+        - High
+        - Blocker
   - type: textarea
     attributes:
       label: Status
@@ -83,14 +103,13 @@ body:
         ...
     validations:
       required: true
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Logs
-      description: Run "mina client export-logs". You'll get a tar.gz file. Upload this file to a hosting service (Google Drive, Dropbox, etc.) and paste here the link to access it.
-      placeholder: |
-        https://drive.google.com/file/d/1GodnZqi-_cYox2UXii2jXWPNxgn5AprI/
-    validations:
-      required: true
+      value: |
+        We are working on a new service for our community to safely upload their logs, in the meanwhile please send your logs to our e-mail:
+        - Run "mina client export-logs";
+        - Upload the resulting tar.gz file to a hosting service (Google Drive, Dropbox, etc.);
+        - Share the link where we can download your logs with logs@o1labs.org;
   - type: textarea
     attributes:
       label: Additional information
